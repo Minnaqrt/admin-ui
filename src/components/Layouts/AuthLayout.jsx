@@ -1,5 +1,4 @@
 import Logo from '../Elements/Logo'
-import FormSignIn from '../Fragments/FormSignin'
 
 const AuthLayout = (props) => {
     const { children, type } = props;
