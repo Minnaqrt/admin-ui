@@ -1,15 +1,3 @@
-
-
-// const App = () => {
-// 	return (
-// 		<>
-// 			<SignUpPage/>
-// 		</>
-// 	);
-//   };
-  
-//   export default App
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignInPage from "./pages/signIn";
 import SignUpPage from "./pages/signUp";
