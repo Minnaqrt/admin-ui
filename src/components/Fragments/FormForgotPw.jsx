@@ -7,7 +7,7 @@ const FormForgotPw = () => {
   return (
 			<form action="">
         <h2 className="text-center text-xl text-defaultBlack font-bold mb-4">Forgot Password?</h2>
-        <p className="text-center text-gray-01 font-medium mb-8">
+        <p className="text-center text-gray-01 mb-8">
           Enter your email address to get the password reset link.
         </p>
 			  <div className="mb-6">
