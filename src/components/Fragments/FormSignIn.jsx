@@ -21,13 +21,14 @@ const FormSignIn = () => {
                 placeholder="*************"
                 name="password"
                 />
+                
 			  </div>
-			  <div className="mb-3">
+			  <div className="mb-6">
 				<CheckBox label="Keep me signed in" name="status"/>
 			  </div>
 			  <Button variant="bg-primary w-full text-white" type="submit">
-                Login
-              </Button>
+            Login
+        </Button>
 			</form>
   )
 }
