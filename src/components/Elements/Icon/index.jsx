@@ -339,6 +339,13 @@ const IconWrapper = ({ children }) => (
     </IconWrapper>
   )
 
+  const ArrowUpRightIcon = () => (
+    <IconWrapper>
+      <path d="M4.66669 11.3333L11.3334 4.66667" stroke="#299D91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4.66669 4.66667H11.3334V11.3333" stroke="#299D91" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </IconWrapper>
+  )
+
   export const Icon = {
     Overview: OverviewIcon,
     Balance: BalanceIcon,
@@ -359,4 +366,5 @@ const IconWrapper = ({ children }) => (
     ArrowUp: ArrowUpIcon,
     ArrowDown: ArrowDownIcon,
     ArrowRight: ArrowRightIcon,
+    ArrowUpRight: ArrowUpRightIcon,
   }

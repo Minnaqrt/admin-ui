@@ -5,7 +5,7 @@ import expensesBreakdowns from "../data/expense";
 import transactions from "../data/transaction";
 import { Icon } from "../components/Elements/Icon"
 import { useState } from "react";
-import { Button } from "@mui/material";
+import CardBalance from "../components/Fragments/Dashboard/CardBalance";
 
 const DashboardPage = () => {
 const tabs = ["All", "Revenue", "Expense"]
@@ -98,7 +98,7 @@ function handleClick(e) {
     <MainLayout type="dashboard">
       {/* top content start*/}
       <div className="md:grid md:grid-cols-3 md:gap-x-6">
-        <Card title="Total Balance" />
+        <CardBalance />
         <Card title="Goals" /> 
         <Card title="Upcoming Bill" desc={billCard} />
       </div>
