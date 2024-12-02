@@ -8,7 +8,7 @@ export const accounts = [
       accountType: "Credit Card",
       accountNumber: "3388 4556 8860 80000",
       balance: 25000,
-      logo: "../public/images/Mastercard.png",
+      logo: "Mastercard.png",
     },
     {
       id: 2,
