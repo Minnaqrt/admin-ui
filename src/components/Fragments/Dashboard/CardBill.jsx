@@ -26,7 +26,14 @@ const CardBill = () => {
       ))
 
   return (
-    <Card title="Upcoming Bill" desc={billCard} />
+    <Card
+      title="Upcoming Bill"
+      desc={
+        <div className="h-full flex flex-col justify-around">
+          {billCard}
+        </div>
+      }
+    />
   )
 }
 
