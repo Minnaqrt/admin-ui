@@ -7,7 +7,8 @@ const ExpensePage = () => {
     <MainLayout type="expense">
       {/* top content start*/}
       <div className="md:grid md:grid-cols-1 md:gap-x-6">
-        <Card title="Expenses Comparison" 
+        <Card title="Expenses Comparison"
+            variant="md:col-span-3 text-primary" 
             desc="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, tempora tempore? Voluptatibus ullam tempora corporis cupiditate accusamus, id nam tenetur repellendus ad veniam. Temporibus, vero iure laborum veritatis molestias nostrum."
         />
         <div className="md:grid md:grid-cols-3 md:gap-x-6">

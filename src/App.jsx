@@ -6,6 +6,7 @@ import ForgotPasswordPage from "./pages/forgotPw";
 import DashboardPage from "./pages/dashboard";
 import BalancePage from "./pages/balance";
 import ExpensePage from "./pages/expense";
+import GoalPage from "./pages/goal";
 
 const App = () => {
   const myRouter = createBrowserRouter([
@@ -29,6 +30,10 @@ const App = () => {
 	{
 		path: "/balance",
 		element: <BalancePage />,
+	},
+	{
+		path: "/goal",
+		element: <GoalPage />,
 	},
 	{
 		path: "/expense",
