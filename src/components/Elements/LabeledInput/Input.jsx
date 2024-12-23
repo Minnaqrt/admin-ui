@@ -1,12 +1,6 @@
+const Input = ({ name, type, placeholder, register}) => {
+    const variant = "bg-special-mainBg border border-gray-03"
 
-
-const Input = (props) => {
-    const { 
-      type, 
-      placeholder, 
-      name,
-      variant = "bg-special-mainBg border border-gray-03"
-     } = props;
   return (
     <input
       type={type}
@@ -14,6 +8,7 @@ const Input = (props) => {
       placeholder={placeholder}
       name={name}
       id={name}
+      {...register}
     />
   )
 }
