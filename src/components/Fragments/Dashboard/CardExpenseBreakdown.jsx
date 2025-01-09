@@ -10,11 +10,11 @@ const CardExpenseBreakdown = () => {
                     {expensesBreakdown.icon}
                 </div>
                 <div className="ms-4">
-                    <span className="text-gray-02">{expensesBreakdown.category}</span>
+                    <span className="text-black">{expensesBreakdown.category}</span>
                     <br />
-                    <span className="font-bold text-lg">${expensesBreakdown.amount}</span>
+                    <span className="font-bold text-lg text-black">${expensesBreakdown.amount}</span>
                     <div className="flex">
-                        <span className="text-gray-02">
+                        <span className="text-black">
                             {expensesBreakdown.percentage}%*
                         </span>{" "}
                         {expensesBreakdown.arrow}
@@ -22,15 +22,14 @@ const CardExpenseBreakdown = () => {
                 </div>
             </div>
             <div className="flex place-content-center flex-col me-8">
-                <Icon.ArrowRight />
+                <Icon.ArrowRight className="text-black" />
             </div>
         </div>
     ));
 
     return (
         <Card variant="md:col-span-2" title="Expenses Breakdown" desc={<div className="h-full md:grid md:grid-cols-3">{expenseCard}</div>} />
+    );
+};
 
-    )
-}
-
-export default CardExpenseBreakdown
+export default CardExpenseBreakdown;

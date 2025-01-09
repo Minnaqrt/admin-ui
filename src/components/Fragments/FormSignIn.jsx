@@ -13,7 +13,6 @@ import { NotifContext } from '../../context/notifContext';
 const FormSignIn = () => {
   const { msg, setMsg, open, setOpen, isLoading, setIsLoading } = useContext(NotifContext);
   const { setIsLoggedIn, setName } = useContext(AuthContext);
-
   const navigate = useNavigate();
 
   const {
@@ -44,8 +43,6 @@ const FormSignIn = () => {
 
       const decoded = jwtDecode(response.data.refreshToken);
       setName(decoded.name);
-
-      console.log(decoded);
 
       navigate('/');
     } catch (error) {

@@ -10,8 +10,8 @@ const CardTransaction = () => {
 
     function handleClick(e) {
         const transactionsFiltered =
-            e.target.value != "All"
-                ? transactions.filter(({ type }) => type == e.target.value)
+            e.target.value !== "All"
+                ? transactions.filter(({ type }) => type === e.target.value)
                 : transactions;
 
         setActiveTab(e.target.value);
@@ -25,7 +25,7 @@ const CardTransaction = () => {
                     {transaction.icon}
                 </div>
                 <div className="ms-4">
-                    <span className="text-xl font-bold">
+                    <span className="text-xl font-bold text-black">
                         {transaction.transactionName}
                     </span>
                     <br />
@@ -53,9 +53,9 @@ const CardTransaction = () => {
                             <button
                                 key={tab}
                                 className={
-                                    activeTab == tab
+                                    activeTab === tab
                                         ? "px-4 font-bold border-b-4 border-primary text-primary"
-                                        : "px-4 font-bold text-gray-01"
+                                        : "px-4 font-bold text-gray-02"
                                 }
                                 value={tab}
                                 onClick={handleClick}
@@ -68,7 +68,7 @@ const CardTransaction = () => {
                 </div>
             }
         />
-    )
+    );
 }
 
-export default CardTransaction
+export default CardTransaction;

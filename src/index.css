@@ -11,27 +11,103 @@ html {
 
 @layer base {
     :root {
-        /* default primary color*/
-      --color-primary: #299D91;
+        /* Default primary color */
+        --color-primary: #299D91;
+        /* Light mode colors */
+        --bg-light: #f0f0f0;
+        --text-dark: #000000;
+        --icon-dark: #000000;
+        --border-light: #E0E0E0;
+        /* Dark mode colors */
+        --bg-dark: #121212;
+        --text-light: #FFFFFF;
+        --icon-light: #FFFFFF;
+        --border-dark: #3A3A3A;
     }
-  }
-  
-  .theme-blue {
-    --color-primary: #1E90FF;
-  }
-  
-  .theme-purple {
-    --color-primary: #6A5ACD;
-  }
-  
-  .theme-pink {
-    --color-primary: #DB7093;
-  }
-  
-  .theme-brown {
-    --color-primary: #8B4513;
-  }
+}
 
-  .zoom-in {
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.text-black {
+    color: #000000;
+}
+
+body.dark-mode .text-black {
+    color: #000000;
+}
+
+.bg-special-mainBg {
+    background-color: var(--bg-light);
+}
+
+body.dark-mode .bg-special-mainBg {
+    background-color: var(--bg-dark);
+}
+
+.icon {
+    color: var(--icon-dark);
+}
+
+body.dark-mode .icon {
+    color: var(--icon-light);
+}
+
+.button-primary {
+    background-color: var(--color-primary);
+    color: var(--text-light);
+}
+
+body.dark-mode .button-primary {
+    background-color: var(--color-primary);
+    color: var(--text-light);
+}
+
+.border-gray-05 {
+    border-color: var(--border-light);
+}
+
+body.dark-mode .border-gray-05 {
+    border-color: var(--border-dark);
+}
+
+.theme-blue {
+    --color-primary: #1E90FF;
+}
+
+.theme-purple {
+    --color-primary: #6A5ACD;
+}
+
+.theme-pink {
+    --color-primary: #DB7093;
+}
+
+.theme-brown {
+    --color-primary: #8B4513;
+}
+
+.tab-button {
+    background-color: transparent;
+    color: var(--text-dark);
+}
+
+body.dark-mode .tab-button {
+    color: var(--text-light);
+}
+
+.tab-button.active {
+    border-bottom: 4px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.zoom-in {
     @apply duration-500 hover:translate-y-1 hover:scale-110;
-  }
+}

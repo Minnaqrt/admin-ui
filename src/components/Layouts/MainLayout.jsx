@@ -2,8 +2,8 @@ import { useContext } from "react";
 import Header from "../Fragments/Header";
 import Navbar from "../Fragments/Navbar";
 import { ThemeContext } from "../../context/themeContext";
-import SimpleBackdrop from '../Elements/Backdrop';
-import CustomizedSnackbars from '../Elements/SnackBar';
+import SimpleBackdrop from "../Elements/Backdrop";
+import CustomizedSnackbars from "../Elements/SnackBar";
 import { NotifContext } from "../../context/notifContext";
 
 const MainLayout = (props) => {
@@ -13,9 +13,9 @@ const MainLayout = (props) => {
 
   return (
     <div className={`flex bg-special-mainBg w-screen min-h-screen max-w-full ${theme?.name}`}>
-      {/* navbar start */}
+      {/* Navbar */}
       <Navbar />
-      {/* navbar end */}
+
       <div className="w-screen">
         {isLoading && (
           <SimpleBackdrop isLoading={isLoading} setIsLoading={setIsLoading} />
@@ -28,12 +28,12 @@ const MainLayout = (props) => {
             setOpen={setOpen}
           />
         )}
-        {/* header start */}
+
+        {/* Header */}
         <Header />
-        {/* header end */}
-        {/* content start */}
+
+        {/* Content */}
         <main className="px-6 py-4">{children}</main>
-        {/* content end */}
       </div>
     </div>
   );
