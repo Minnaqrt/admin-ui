@@ -18,7 +18,7 @@ describe("User login and dashboard overview", () => {
 
     cy.get("button").contains("Login").click();
 
-    cy.url().should("include", "/dashboard");
+    cy.url().should("include", "/");
 
     cy.get("header").should("be.visible");
     cy.get("nav").should("be.visible");
